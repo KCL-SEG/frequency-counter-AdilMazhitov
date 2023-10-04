@@ -2,6 +2,12 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def frequencies(items):
-    frequencies = {}
+    frequencies  = {}
     # Your code goes here
-    return frequencies
+    list = []
+    for x in items:
+        list.append(str(x))
+    for y in list:
+        counterItem = list.count(str(y))
+        frequencies .update({y : counterItem})
+    return frequencies 
